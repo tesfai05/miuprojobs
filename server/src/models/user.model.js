@@ -1,4 +1,3 @@
-  
 require('dotenv').config();
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
@@ -32,3 +31,4 @@ UserSchema.pre('save', function (next) {
 });
 
 module.exports = mongoose.model('User', UserSchema);
+

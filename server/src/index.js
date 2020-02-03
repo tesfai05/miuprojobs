@@ -16,7 +16,7 @@ const app = express();
 /////////////////////////////////////////
 // CONFIG
 /////////////////////////////////////////
-app.set(SECRET_KEY, process.env.SECRET_KEY || 'MIUProJobsSecretKey');
+app.set(SECRET_KEY, process.env.SECRET_KEY || 'MeanJobHuntSecretKey');
 
 /////////////////////////////////////////
 // MIDDLEWARE
