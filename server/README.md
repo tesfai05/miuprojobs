@@ -1,6 +1,6 @@
 # JobHunt Server
 
-The server for JobHunt.
+The server for MiuProJobs.
 
 ## Setup Guide
 

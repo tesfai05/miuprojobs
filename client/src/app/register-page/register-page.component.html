@@ -1,9 +1,9 @@
-<div class="container">
+<div class="header">
   <div class="row">
-    <div class="col-md-6 offset-md-3 py-5">
+    <div class="col-md-3 offset-md-4 py-4">
       <div class="card">
-        <div class="card-header bg-primary text-light text-center text-uppercase">
-          <strong>Register an Account</strong>
+        <div class="card-header bg-dark text-light text-center text-uppercase">
+          <strong>Sin up</strong>
         </div>
         <div class="card-body">
           <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
@@ -34,7 +34,7 @@
                 <button type="submit" class="btn btn-primary btn-block">Register</button>
               </div>
               <div class="col-md-6">
-                <a class="btn btn-outline-success btn-block text-success" [routerLink]="['/', 'login']">Already had account?</a>
+                <a class="btn btn-success btn-block " [routerLink]="['/', 'login']">Already had account?</a>
               </div>
             </div>
           </form>

@@ -1,6 +1,6 @@
 # Server API Documentation
 
-Following is the supported API for JobHunt server.
+Following is the supported API for Miuprojobs server.
 
 - [ ] [Authentication API](#authentication-api)
 - [ ] [Listing API]()
@@ -10,7 +10,7 @@ Following is the supported API for JobHunt server.
 
 ## Authentication API
 
-In JobHunt, authentication is for recruiters to access to the dashboard. Following are supported end-points.
+In MiuProJobs, authentication is for recruiters to access to post jobs. Following are supported end-points.
 
 - [Register](#register-apiauthregister)
 - [Login](#login-apiauthlogin)
