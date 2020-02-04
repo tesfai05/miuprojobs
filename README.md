@@ -1,5 +1,3 @@
-# JobHunt
+# Miu Pro jobs
 
-A job listing directory built with MEAN stack.
-
-![](screenshot.png)
+A job listing app for MIU students.
