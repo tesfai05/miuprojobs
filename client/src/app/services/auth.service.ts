@@ -1,11 +1,11 @@
-import {Injectable} from '@angular/core';
-import {BehaviorSubject, Observable} from 'rxjs';
-import {HttpClient} from '@angular/common/http';
-import {map} from 'rxjs/operators';
-import {environment as env} from '../../environments/environment';
+import {Injectable} from "@angular/core";
+import {BehaviorSubject, Observable} from "rxjs";
+import {HttpClient} from "@angular/common/http";
+import {map} from "rxjs/operators";
+import {environment as env} from "../../environments/environment";
 
-const LOGIN_API = `${env.api.basepath}/auth/${env.api.routes[' auth'].login}`;
-const REGISTER_API = `${env.api.basepath}/auth/${env.api.routes[' auth'].register}`;
+const LOGIN_API = `${env.api.basepath}/auth/${env.api.routes['auth'].login}`;
+const REGISTER_API = `${env.api.basepath}/auth/${env.api.routes['auth'].register}`;
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +27,7 @@ export class AuthService {
     return this.http.post(LOGIN_API, {email, password})
       .pipe(
         map(response => {
-          const user = {email, access_token: response[' payload'][' access_token'] };
+          const user = {email, access_token: response['payload']['access_token'] };
           localStorage.setItem('currentUser', JSON.stringify(user));
           this.currentUserSubject.next(user);
           return user;
@@ -39,7 +39,7 @@ export class AuthService {
     return this.http.post(REGISTER_API, {name, email, password})
       .pipe(
         map(response => {
-          return response[' status'] === 'success';
+          return response['status'] === 'success';
         })
       );
   }

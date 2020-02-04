@@ -1,6 +1,6 @@
 # Server API Documentation
 
-Following is the supported API for JobHunt server.
+Following is the supported API for MIU_Pro_Jobs server.
 
 - [ ] [Authentication API](#authentication-api)
 - [ ] [Listing API]()
